@@ -13,7 +13,7 @@ internal class Program
 
         Console.WriteLine("На какое количество значение позиций сдвинуть массив?");
         userInput = Console.ReadLine();
-        numberShifts = Convert.ToInt32(userInput);
+        numberShifts = Convert.ToInt32(userInput) % array.Length;
 
         for (int i = 0; i < numberShifts; i++)
         {
